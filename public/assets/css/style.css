@@ -1,0 +1,27 @@
+.head {
+    background-color:#172591;
+    font-family: Helvetica, sans-serif;
+    font-size: 80px;
+    color: white;
+    padding: 0px;
+    margin:0px;
+    border: 0px;
+
+}
+
+p {
+    margin: 0px;
+}
+
+.nav {
+    background-color:#3648d1;
+    font-family: Helvetica;
+    padding: 0px;
+    margin:0px;
+    border: 0px;
+}
+
+.nav-link{
+    color: white;
+    
+}
