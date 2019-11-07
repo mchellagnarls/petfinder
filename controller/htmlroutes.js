@@ -40,6 +40,11 @@ htmlRoutes = function (app) {
     app.get("login", function(req,res){
         res.render("partials/login");
     });
+
+    app.get("add-pet",function(req,res){
+        res.render("partials/addpetsurvey");
+
+    });
 };
 
 module.exports =htmlRoutes;
