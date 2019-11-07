@@ -20,6 +20,12 @@ htmlRoutes = function (app) {
     app.get("/", function(req,res) {
         res.render("partials/index");
     });
+    app.get("/view-homes", function(req,res) {
+        res.render("partials/view-homes");
+    });
+    app.get("/view-pets", function(req,res) {
+        res.render("partials/view-pets");
+    });
 };
 
 module.exports =htmlRoutes;
