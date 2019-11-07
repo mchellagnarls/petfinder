@@ -17,31 +17,32 @@ htmlRoutes = function (app) {
     //     });
     //   });
     //wildcard for redirecting everything back to the home page
-    app.get("/", function(req,res) {
+    app.get("/", function (req, res) {
         res.render("partials/index");
     });
-  
-    app.get("/view-homes", function(req,res) {
+
+    app.get("/view-homes", function (req, res) {
         res.render("partials/view-homes");
     });
-    app.get("/view-pets", function(req,res) {
+    app.get("/view-pets", function (req, res) {
         res.render("partials/view-pets");
+    });
 
-    app.get("/survey", function(req,res){
+    app.get("/survey", function (req, res) {
         res.render("partials/survey");
     });
 
-    app.get("/sign-up", function(req,res){
+    app.get("/sign-up", function (req, res) {
         res.render("partials/sign-up");
     });
 
-    app.get("/login", function(req,res){
+    app.get("/login", function (req, res) {
         res.render("partials/login");
     });
 
-    app.get("/add-pet",function(req,res){
+    app.get("/add-pet", function (req, res) {
         res.render("partials/addpetsurvey");
     });
-};
+}
 
-module.exports =htmlRoutes;
+module.exports = htmlRoutes;
