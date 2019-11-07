@@ -42,7 +42,7 @@ li {
     width: 20%;
     text-align: center;
     
-}
+};
 
 .nav-link:hover{
     color: white;
@@ -77,6 +77,11 @@ a:hover {
 }
 
 .survey {
+    margin-top: 50px;
     padding-top: 50px;
     font-family: helvetica;
+}
+
+h1 {
+   padding-bottom: 5px;
 }
