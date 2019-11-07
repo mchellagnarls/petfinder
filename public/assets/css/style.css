@@ -10,7 +10,7 @@ body {
     color: white;
     margin:0px;
     border: 0px;
-    height: 150px;
+    height: 120px;
 
 }
 
@@ -20,19 +20,27 @@ p {
 
 .nav {
     background-color:#5868e0;
-    font-family: Helvetica;
+    font-family: 'PT Sans Narrow';
+
     padding: 0px;
     margin:0px;
     border: 0px;
    height: 60px;
+   width: 100%;
 }
 
 .nav-link{
     color: #ededed;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: lighter;
-    padding-left: 120px;
-    padding-top: 15px;
+    text-transform: uppercase;
+    
+}
+
+li {
+    
+    width: 20%;
+    text-align: center;
     
 }
 
@@ -41,15 +49,17 @@ p {
 
 }
 
+
 #survey-button {
+    
     background-color:#172591;
     font-weight: lighter;
     color: white;
-    font-size: 60px;
+    font-size: 50px;
     padding: 30px;
     margin-top: 100px;
     text-align: center;
-    height: 250px;
+    height: 230px;
     width: 400px;
     border-radius: 25px;
     box-shadow: 3px 3px 5px #888888;
