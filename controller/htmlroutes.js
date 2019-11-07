@@ -20,14 +20,12 @@ htmlRoutes = function (app) {
     app.get("/", function(req,res) {
         res.render("partials/index");
     });
-
-    app.get("/view-pets",function(req,res){
-        res.render("partials/view-pets");
-    });
-
-    app.get("view-homes",function(req,res){
+  
+    app.get("/view-homes", function(req,res) {
         res.render("partials/view-homes");
     });
+    app.get("/view-pets", function(req,res) {
+        res.render("partials/view-pets");
 
     app.get("/survey", function(req,res){
         res.render("partials/survey");
@@ -43,7 +41,6 @@ htmlRoutes = function (app) {
 
     app.get("/add-pet",function(req,res){
         res.render("partials/addpetsurvey");
-
     });
 };
 
