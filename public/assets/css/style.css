@@ -49,10 +49,19 @@ p {
     padding: 30px;
     margin-top: 100px;
     text-align: center;
-    height: 200px;
+    height: 250px;
     width: 400px;
     border-radius: 25px;
     box-shadow: 3px 3px 5px #888888;
 
 
+}
+
+a {
+    color:#ededed;
+}
+
+a:hover {
+    color: white;
+    text-decoration:none;
 }
