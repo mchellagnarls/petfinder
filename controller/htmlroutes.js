@@ -25,8 +25,20 @@ htmlRoutes = function (app) {
         res.render("partials/view-pets");
     });
 
+    app.get("view-homes",function(req,res){
+        res.render("partials/view-homes");
+    });
+
     app.get("/survey", function(req,res){
-        res.render("partials/survey")
+        res.render("partials/survey");
+    });
+
+    app.get("/sign-up", function(req,res){
+        res.render("partials/sign-up");
+    });
+
+    app.get("login", function(req,res){
+        res.render("partials/login");
     });
 };
 
