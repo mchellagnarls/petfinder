@@ -1,30 +1,33 @@
 
-    <container>
-        <h1>Survey:</h1>
-        <p>Fill out a survery about your pet!</p>
+<div class="row">
+<div class="col-8 offset-2">
+    <container class="survey">
+        
+        <h1>Tell us about your pet</h1>
         <form>
             <div class="form-group">
-                <input id="pet_name" type="text" class="form-control" placeholder="Pet's Name">
+                 <label for="question1"><p>What is your pet's name?</p></label>
+                <input id="question1" type="text" class="form-control" placeholder="Pet's Name">
             </div>
             <div class="form-group">
-                <label for="question1">Are you putting up a cat or a dog for adoption?</label>
-                <select class="form-control" id="question1">
+                <label for="question2"><p>Are you putting up a cat or a dog for adoption?</p></label>
+                <select class="form-control" id="question2">
                     <option value="empty"></option>
                     <option value="1">Cat</option>
                     <option value="2">Dog</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="question2">What type of home does your pet live in?</label>
-                <select class="form-control" id="question2">
+                <label for="question3"><p>What type of home does your pet live in?</p></label>
+                <select class="form-control" id="question3">
                     <option value="empty"></option>
                     <option value="1">Apartment</option>
                     <option value="2">Single family home</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="question3">What size is your pet?</label>
-                <select class="form-control" id="question3">
+                <label for="question4"><p>What size is your pet?</p></label>
+                <select class="form-control" id="question4">
                     <option value="empty"></option>
                     <option value="1">1 (Very small)</option>
                     <option value="2">2 (Medium)</option>
@@ -32,16 +35,16 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="question4">Is your pet hypoallergenic?</label>
-                <select class="form-control" id="question4">
+                <label for="question5"><p>Is your pet hypoallergenic?</p></label>
+                <select class="form-control" id="question5">
                     <option value="empty"></option>
                     <option value="1">Yes</option>
                     <option value="2">No</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="question5">How active is your pet?</label>
-                <select class="form-control" id="question5">
+                <label for="question6"><p>How active is your pet?</p></label>
+                <select class="form-control" id="question6">
                     <option value="empty"></option>
                     <option value="1">1 (Sedentary)</option>
                     <option value="2">2 (Lightly active)</option>
@@ -50,8 +53,8 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="question6">How old is your pet?</label>
-                <select class="form-control" id="question6">
+                <label for="question7"><p>How old is your pet?</p></label>
+                <select class="form-control" id="question7">
                     <option value="empty"></option>
                     <option value="1">0-1</option>
                     <option value="2">2-4</option>
@@ -59,6 +62,11 @@
                     <option value="4">11+</option>
                 </select>
             </div>
-        </form>
+        
         <h1>Add a photo of your pet!</h1>
+
+        <button type="submit">Submit</button>
+        </form>
     </container>
+    </div>
+    </div>

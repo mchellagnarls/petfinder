@@ -75,3 +75,8 @@ a:hover {
     color: white;
     text-decoration:none;
 }
+
+.survey {
+    padding-top: 50px;
+    font-family: helvetica;
+}

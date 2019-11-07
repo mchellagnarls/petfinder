@@ -37,11 +37,11 @@ htmlRoutes = function (app) {
         res.render("partials/sign-up");
     });
 
-    app.get("login", function(req,res){
+    app.get("/login", function(req,res){
         res.render("partials/login");
     });
 
-    app.get("add-pet",function(req,res){
+    app.get("/add-pet",function(req,res){
         res.render("partials/addpetsurvey");
 
     });
