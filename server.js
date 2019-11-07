@@ -11,7 +11,7 @@ PORT = process.env.PORT || 5500;
 //Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
+app.use(express.static(path.join(__dirname, '/public')));
 //Putting in handlebars
 var exphbs = require("express-handlebars");
 

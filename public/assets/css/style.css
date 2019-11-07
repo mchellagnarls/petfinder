@@ -1,11 +1,16 @@
+body {
+    background-color: #f5f5f5;
+}
+
 .head {
     background-color:#172591;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Bowlby One SC', Helvetica, sans-serif;
+    letter-spacing: 5px;
     font-size: 80px;
     color: white;
-    padding: 0px;
     margin:0px;
     border: 0px;
+    height: 120px;
 
 }
 
@@ -14,14 +19,64 @@ p {
 }
 
 .nav {
-    background-color:#3648d1;
-    font-family: Helvetica;
+    background-color:#5868e0;
+    font-family: 'PT Sans Narrow';
+
     padding: 0px;
     margin:0px;
     border: 0px;
+   height: 60px;
+   width: 100%;
 }
 
 .nav-link{
-    color: white;
+    color: #ededed;
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform: uppercase;
     
+}
+
+li {
+    
+    width: 20%;
+    text-align: center;
+    
+}
+
+.nav-link:hover{
+    color: white;
+
+}
+
+
+#survey-button {
+    
+    background-color:#172591;
+    font-weight: lighter;
+    color: white;
+    font-size: 50px;
+    padding: 30px;
+    margin-top: 100px;
+    text-align: center;
+    height: 230px;
+    width: 400px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 5px #888888;
+
+
+}
+
+a {
+    color:#ededed;
+}
+
+a:hover {
+    color: white;
+    text-decoration:none;
+}
+
+.survey {
+    padding-top: 50px;
+    font-family: helvetica;
 }
