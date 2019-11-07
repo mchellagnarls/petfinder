@@ -34,7 +34,7 @@ $(function(){
             image:$("question8-pet").val().trim()
         };
 
-        $.ajax("/api/homes", {
+        $.ajax("/api/pets", {
             type: "POST",
             data: newPet
           }).then(
