@@ -7,14 +7,41 @@
 
 
 
-module.exports = function(sequelize, DataTypes) {
-    var Pets = sequelize.define("Pets", {
-      Animal:{
+module.exports = function (sequelize, DataTypes) {
+  var Pets = sequelize.define("Pets", {
+    pet_name: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }, 
+    pet_type: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    pet_age: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    pet_breed: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    pet_size: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+    hypo: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
+    },
+    activity: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    pet_picture: {
+      type: DataTypes.STRING(1000)
+    }
+    
+  });
 
-        
-      } DataTypes.STRING,
-      complete: DataTypes.BOOLEAN
-    });
-    return Pets;
-  };
-
+  return Pets;
+};
