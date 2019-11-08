@@ -52,15 +52,15 @@ htmlRoutes = function (app) {
         res.render("partials/petsurvey");
     });
 
-    app.get("add-human", function(req,res){
+    app.get("/add-human", function(req,res){
         res.render("partials/humansurvey");
     });
 
-    app.get("results-pets", function(req,res){
+    app.get("/results-pets", function(req,res){
         res.render("partials/results-pets");
     });
 
-    app.get("results-humans", function(req,res){
+    app.get("/results-humans", function(req,res){
         res.render("partials/results-humans");
     });
 }
