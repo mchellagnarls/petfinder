@@ -16,7 +16,12 @@ $(function(){
           }).then(
             function() {
               console.log("created new human");
-              $(".survey").hide();
+    
+
+              $.ajax({
+                url: "/results-pets",
+                type: "GET"
+              });
               
     });
 });
@@ -40,7 +45,11 @@ $(function(){
           }).then(
             function() {
               console.log("created new pet");
-              $(".survey").hide();
+              $.ajax({
+                url: "/results-humans",
+                type: "GET"
+              });
+
             }
           );
               
