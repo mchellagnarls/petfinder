@@ -21,7 +21,7 @@ htmlRoutes = function (app) {
         res.render("partials/index");
     });
 
-    app.get("/view-homes", function (req, res) {
+    app.get("/view-humans", function (req, res) {
         res.render("partials/view-homes");
     });
     app.get("/view-pets", function (req, res) {
@@ -41,8 +41,9 @@ htmlRoutes = function (app) {
     });
 
     app.get("/add-pet", function (req, res) {
-        res.render("partials/addpetsurvey");
+        res.render("partials/petsurvey");
     });
+
 }
 
 module.exports = htmlRoutes;

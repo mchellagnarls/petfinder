@@ -1,21 +1,21 @@
 $(function(){
-    $(".home-form").on("submit", function(event){
+    $(".human-form").on("submit", function(event){
         event.preventDefault();
         var newHome = {
-            pet_type: $("question1-home").val(),
-            residence: $("question2-home").val(),
-            pet_size: $("question3-home").val(),
-            hypo: $("question4-home").val(),
-            activity: $("question5-home").val(),
-            pet_age: $("question5-home").val(),
+            pet_type: $("question1-human").val(),
+            residence: $("question2-human").val(),
+            pet_size: $("question3-human").val(),
+            hypo: $("question4-human").val(),
+            activity: $("question5-human").val(),
+            pet_age: $("question5-human").val(),
         };
 
-        $.ajax("/api/homes", {
+        $.ajax("/api/humans", {
             type: "POST",
             data: newHome
           }).then(
             function() {
-              console.log("created new home");
+              console.log("created new human");
               $(".survey").hide();
               
     });
