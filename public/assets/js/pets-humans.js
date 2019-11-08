@@ -17,11 +17,6 @@
             function() {
               console.log("created new human");
     
-
-              $.ajax({
-                url: "/results-pets",
-                type: "GET"
-              });
               
     });
 });
@@ -45,11 +40,6 @@
           }).then(
             function() {
               console.log("created new pet");
-              $.ajax({
-                url: "/results-humans",
-                type: "GET"
-              });
-
             }
           );
               
