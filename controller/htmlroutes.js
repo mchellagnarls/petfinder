@@ -24,6 +24,7 @@ htmlRoutes = function (app) {
     app.get("/view-homes", function (req, res) {
         res.render("partials/view-homes");
     });
+    
     app.get("/view-pets", function (req, res) {
         res.render("partials/view-pets");
     });
