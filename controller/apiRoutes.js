@@ -16,13 +16,21 @@ module.exports = function(app) {
     // create new pet record
     app.post("/api/pets", function(req, res) {
         db.Pets.create(req.body).then(function(response) {
-            res.json(response);
+            //logic for matches
+            
+            res.redirect("/partials/results-humans", 
+            // object of matches to pass to handlebars
+            )
         });
     });
     // create new human record
     app.post("/api/humans", function(req, res) {
         db.Humans.create(req.body).then(function(response) {
-            res.json(response);
+            //logic for matches
+            
+            res.redirect("/partials/results-pets", 
+            // object of matches to pass to handlebars
+            )
         });
     });
     // delete pets by id

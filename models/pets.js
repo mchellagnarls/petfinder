@@ -38,7 +38,7 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: true
     },
     pet_picture: {
-      type: DataTypes.STRING(1000)
+      type: DataTypes.STRING,
     }
     
   });
