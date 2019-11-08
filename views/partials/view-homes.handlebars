@@ -1,0 +1,21 @@
+<div class="row">
+
+{{#each homes}}
+<div class="col-3 offset-2">
+<div class="card">
+  <img src={{image}} class="card-img-top">
+  <div class="card-body">
+    
+    <p class="card-text">{{pet_type}}</p>
+    <p class="card-text">Residence {{residence}}</p>
+    
+    <p class="card-text">Size: {{pet_size}}</p>
+    <p class="card-text">Age: {{pet_age}}</p>
+    <p class="card-text">Activity Level: {{activty}}</p>
+    <p class="card-text">Allergies: {{hypo}}</p>
+  </div>
+</div>
+</div>
+{{/each}}
+
+</div>
