@@ -1,23 +1,23 @@
 {
   "development": {
     "username": "root",
-    "password": "Catsrule636!",
-    "database": "pettle",
+    "password": "",
+    "database": "",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "test": {
     "username": "root",
-    "password": "Catsrule6363!",
+    "password": "",
     "database": "pettle",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "production": {
-    "username": "root",
-    "password": "Catsrule6363!",
+    "username": "",
+    "password": "",
     "database": "pettle",
     "host": "127.0.0.1",
     "dialect": "mysql",
