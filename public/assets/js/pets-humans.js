@@ -1,4 +1,4 @@
-$(function(){
+
     $(".human-form").on("submit", function(event){
         event.preventDefault();
         var newHome = {
@@ -56,4 +56,3 @@ $(function(){
     });
 
 
-});
