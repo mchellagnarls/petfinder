@@ -9,7 +9,7 @@ module.exports = function(app) {
     });
     // get all humans
     app.get("/api/humans", function(req, res) {
-        db.Homes.findAll({}).then(function(response) {
+        db.Humans.findAll({}).then(function(response) {
             res.json(response);
         });
     });
