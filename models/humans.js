@@ -23,6 +23,10 @@ module.exports = function(sequelize, DataTypes) {
         pet_age: {
             type: DataTypes.INTEGER,
             allowNull: false
+        },
+        has_kids: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: false
         }
     });
     return Human;

@@ -37,12 +37,13 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: true
     },
-    pet_picture: {
-      type: DataTypes.STRING(1000),
-    },
+    
     kid_friendly:{
       type: DataTypes.BOOLEAN,
       defaultValue: false
+    },
+    pet_picture: {
+      type: DataTypes.STRING(1000),
     }
     
   });
