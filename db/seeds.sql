@@ -19,23 +19,23 @@ VALUES ("Mookie", "Dog", 6, "Corgi", "Medium", FALSE, "Lightly Active", "Yes", "
 INSERT INTO Pets (pet_name, pet_type, pet_age, pet_breed, pet_size, hypo, activity, kid_friendly, pet_picture) 
 VALUES ("Wookie", "Cat", 3, "Maine Coon", "Medium", FALSE, "Moderate", "Yes", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS61rthRAnW2_MRuVhgI-gS16kCdGOSO999LnNiKlOJDk-fpVe46A&s");
 
-INSERT INTO Human (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
+INSERT INTO Humans (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
 VALUES ("Dog", "Single family home", "Medium", FALSE, "Moderate", 5, FALSE);
-INSERT INTO Human (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
+INSERT INTO Humans (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
 VALUES ("Cat", "Apartment", "Large", TRUE, "Sedentary", 6, FALSE);
-INSERT INTO Human (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
+INSERT INTO Humans (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
 VALUES ("Cat", "Single family home", "Very small", FALSE, "Very active", 3, TRUE);
-INSERT INTO Human (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
+INSERT INTO Humans (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
 VALUES ("Dog", "Single family home", "Large", FALSE, "Lightly Active", 7, FALSE);
-INSERT INTO Human (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
+INSERT INTO Humans (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
 VALUES ("Cat", "Apartment", "Very small", TRUE, "Moderate", 4, TRUE);
-INSERT INTO Human (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
+INSERT INTO Humans (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
 VALUES ("Cat", "Apartment", "Medium", FALSE, "Sedentary", 8, FALSE);
-INSERT INTO Human (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
+INSERT INTO Humans (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
 VALUES ("Dog", "Single family home", "Large", TRUE, "Very Active", 5, TRUE);
-INSERT INTO Human (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
+INSERT INTO Humans (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
 VALUES ("Dog", "Apartment", "Very small", FALSE, "Very Active", 2, FALSE);
-INSERT INTO Human (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
+INSERT INTO Humans (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
 VALUES ("Cat", "Single family home", "Medium", FALSE, "Sedentary", 9, FALSE);
-INSERT INTO Human (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
+INSERT INTO Humans (pet_type, residence, pet_size, hypo, activity, pet_age, has_kids) 
 VALUES ("Dog", "Single family home", "Large", FALSE, "Moderate", 2, TRUE);
