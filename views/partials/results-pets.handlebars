@@ -1,1 +1,19 @@
-<p> results</p>
+<div class="row">
+
+{{#each pet-matches}}
+<div class="col-3 offset-1">
+<div class="card" style="width: 18rem;">
+  <img src={{image}} class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">{{pet_name}}</h5>
+    <p class="card-text">{{pet_type}}</p>
+    <p class="card-text">Size: {{size}}</p>
+    <p class="card-text">Age: {{age}}</p>
+    <p class="card-text">Activity Level: {{activty}}</p>
+    <p class="card-text">Allergies: {{hypo}}</p>
+  </div>
+</div>
+</div>
+{{/each}}
+
+</div>
