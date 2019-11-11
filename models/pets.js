@@ -8,7 +8,7 @@
 
 
 module.exports = function (sequelize, DataTypes) {
-  const Pets = sequelize.define('pets', {
+  let Pets = sequelize.define('Pets', {
     pet_name: {
       type: DataTypes.STRING,
       allowNull: false

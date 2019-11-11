@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    var Human = sequelize.define("Human", {
+    let Humans = sequelize.define('Humans', {
         pet_type: {
             type: DataTypes.STRING,
             allowNull: false
@@ -29,5 +29,5 @@ module.exports = function(sequelize, DataTypes) {
             defaultValue: false
         }
     });
-    return Human;
+    return Humans;
 };
