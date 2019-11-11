@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS pettle;
+CREATE DATABASE pettle;
+USE pettle;
