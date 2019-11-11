@@ -8,7 +8,7 @@
 
 
 module.exports = function (sequelize, DataTypes) {
-  var Pets = sequelize.define("Pets", {
+  const Pets = sequelize.define('pets', {
     pet_name: {
       type: DataTypes.STRING,
       allowNull: false
@@ -38,7 +38,11 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: true
     },
     pet_picture: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(1000),
+    },
+    kid_friendly:{
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
     }
     
   });
