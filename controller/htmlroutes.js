@@ -28,6 +28,7 @@ htmlRoutes = function (app) {
             });
           });
     });
+    
     app.get("/view-pets", function (req, res) {
         db.Pets.findAll({}).then(function(dbPets) {
             res.render("partials/view-pets", {
