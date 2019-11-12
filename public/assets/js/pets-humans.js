@@ -9,14 +9,17 @@ $(".human-form").on("submit", function (event) {
         activity: $("#question5-human").val(),
         pet_age: $("#question6-human").val(),
         has_kids: $("#question7-human").val(),
+        pet_breed: $("#question8-human").val()
+
     };
 
     $.ajax("/api/humans", {
         type: "POST",
         data: newHome
     }).then(
-        function () {
+        function (resp) {
             console.log("created new human");
+            window.location.href = "/results-pets/" + resp.id
 
 
         });
@@ -44,11 +47,20 @@ if ($("#question9-pet").val()) {
         type: "POST",
         data: newPet
     }).then(
-        function () {
+        function (resp) {
             console.log("created new pet");
+            window.location.href = "/results-humans/" + resp.id
         }
     );
 
 });
 
 
+// // Get route for the page that displays any pet
+// app.get("/pet/:id", function(req, res) {
+//     db.Pets.findOne({
+//         where: { id: req.params.id }
+//     }).then(function(resp){
+//         res.render("/pet", resp)
+//     })
+// });
