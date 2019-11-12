@@ -56,34 +56,16 @@ module.exports = function(app) {
     });
     // create new pet record
     app.post("/api/pets", function(req, res) {
-<<<<<<< HEAD
         animalQueryingDB();
         db.Pets.create(req.body).then(function(humanMatches) {
             res.render(humanMatches);
-=======
-        db.Pets.create(req.body).then(function(response) {
-            //logic for matches
-            
-            res.redirect("/partials/results-humans", 
-            // object of matches to pass to handlebars
-            )
->>>>>>> f2fff2cd0e7381e60e90747752afe97bd7214527
         });
     });
     // create new human record
     app.post("/api/humans", function(req, res) {
-<<<<<<< HEAD
         humanQueryingDB();
         db.Humans.create(req.body).then(function(petMatches) {
             res.render("results/partials/resultspets" ,{petMatches: petMatches});
-=======
-        db.Humans.create(req.body).then(function(response) {
-            //logic for matches
-            
-            res.redirect("/partials/results-pets", 
-            // object of matches to pass to handlebars
-            )
->>>>>>> f2fff2cd0e7381e60e90747752afe97bd7214527
         });
     });
 };
