@@ -12,7 +12,7 @@ module.exports = function (sequelize, DataTypes) {
     pet_name: {
       type: DataTypes.STRING,
       allowNull: false
-    }, 
+    },
     pet_type: {
       type: DataTypes.STRING,
       allowNull: false
@@ -37,16 +37,19 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: true
     },
-    
-    kid_friendly:{
+
+    kid_friendly: {
       type: DataTypes.BOOLEAN,
       defaultValue: false
     },
     pet_picture: {
-      type: DataTypes.STRING(1000),
+      type: DataTypes.TEXT,
     }
-    
-  });
+  },
+    {
+      timestamps: false
+
+    });
 
   return Pets;
 };
