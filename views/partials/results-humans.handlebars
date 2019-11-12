@@ -1,0 +1,24 @@
+<div class="container p-0">
+<div class="row">
+
+{{#each human-matches}}
+<div class="col-3 offset-2">
+<div class="card">
+  <img src={{image}} class="card-img-top">
+  <div class="card-body">
+    
+    <p class="card-text">I want a: {{pet_type}}</p>
+    <p class="card-text">I live in a: {{residence}}</p>
+    
+    <p class="card-text">Size: {{pet_size}}</p>
+    <p class="card-text">Age: {{pet_age}}</p>
+    <p class="card-text">Activity Level: {{activty}}</p>
+    <p class="card-text">Allergies: {{hypo}}</p>
+    <p class="card-text">Has kids: {{has_kids}}</p>
+  </div>
+</div>
+</div>
+{{/each}}
+
+</div>
+</div>
