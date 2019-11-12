@@ -93,3 +93,9 @@ h1 {
     border-radius: 25px;
     color: #282828
 }
+
+.matches-title {
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'PT Sans Narrow';
+}

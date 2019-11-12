@@ -56,16 +56,15 @@ module.exports = function(app) {
     });
     // create new pet record
     app.post("/api/pets", function(req, res) {
-        animalQueryingDB();
-        db.Pets.create(req.body).then(function(humanMatches) {
-            res.render(humanMatches);
+        db.Pets.create(req.body).then(function(results) {
+            res.json(results)
         });
     });
     // create new human record
     app.post("/api/humans", function(req, res) {
-        humanQueryingDB();
-        db.Humans.create(req.body).then(function(petMatches) {
-            res.render("results/partials/resultspets" ,{petMatches: petMatches});
+        
+        db.Humans.create(req.body).then(function(results) {
+            res.json(results);
         });
     });
 };
