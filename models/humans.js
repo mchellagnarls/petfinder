@@ -24,6 +24,10 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.INTEGER,
             allowNull: false
         },
+        pet_breed: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
         has_kids: {
             type: DataTypes.BOOLEAN,
             defaultValue: false

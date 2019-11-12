@@ -33,16 +33,4 @@ module.exports = function(app) {
             )
         });
     });
-    // delete pets by id
-    app.delete("/api/pets/:id", function(req, res) {
-        db.Pets.destroy({ where: { id: req.params.id } }).then(function(response) {
-            res.json(response);
-        });
-    });
-    // delete humans by id
-    app.delete("/api/humans/:id", function(req, res) {
-        db.Humans.destroy({ where: { id: req.params.id } }).then(function(response) {
-            res.json(response);
-        });
-    });
 };
