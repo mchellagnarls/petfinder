@@ -23,6 +23,10 @@ module.exports = function(sequelize, DataTypes) {
         pet_age: {
             type: DataTypes.INTEGER,
             allowNull: false
+        },
+        pet_breed: {
+            type: DataTypes.STRING,
+            allowNull: false
         }
     });
     return Human;
