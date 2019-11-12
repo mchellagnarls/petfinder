@@ -1,4 +1,4 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
     let Humans = sequelize.define('Humans', {
         pet_type: {
             type: DataTypes.STRING,
@@ -31,7 +31,10 @@ module.exports = function(sequelize, DataTypes) {
         has_kids: {
             type: DataTypes.BOOLEAN,
             defaultValue: false
-        }
-    });
+        },
+    },
+        {
+            timestamps: false
+        });
     return Humans;
 };
