@@ -4,12 +4,13 @@
 {{#each pets}}
 <div class="col-3 offset-1">
 <div class="card" style="width: 18rem;">
-  <img src={{image}} class="card-img-top">
+  <img src={{pet_picture}} class="card-img-top">
   <div class="card-body">
     <h5 class="card-title">{{pet_name}}</h5>
     <p class="card-text">{{pet_type}}</p>
     <p class="card-text">Size: {{size}}</p>
     <p class="card-text">Age: {{age}}</p>
+    <p class="card-text">Breed {{pet_breed}}</p>
     <p class="card-text">Activity Level: {{activty}}</p>
     <p class="card-text">Allergies: {{hypo}}</p>
     <p class="card-text">Kid friendly: {{kid_friendly}}</p>
